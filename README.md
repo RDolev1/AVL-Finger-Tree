@@ -19,7 +19,7 @@ A robust, dynamic implementation of an AVL Tree in Python, featuring advanced tr
 | `insert(key, val)` | O(log n) | Insertion with automatic height updates and rebalancing. |
 | `finger_insert(key, val)` | O(log n) | Insertion starting from the max node. |
 | `delete(node)` | O(log n) | Node removal with successor/predecessor replacement. |
-| `join(tree2, key, val)` | O(|h1 - h2| + 1) | Merges two trees (h1, h2 are the heights of the respective trees). |
+| `join(tree2, key, val)` | O(abs(h1 - h2) + 1) | Merges two trees (h1, h2 are the heights of the respective trees). |
 | `split(node)` | O(log n) | Splits the tree into two separate trees around the given node. |
 
 ## 🛠️ Implementation Details
